@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .blur-circle {
+    @apply rounded-full filter blur-3xl;
+  }
+  
+  .animate-lively-blob {
+    animation: lively-blob 10s ease-in-out infinite;
+  }
+
+  @keyframes lively-blob {
+    0%, 100% {
+      transform: scale(1) translate(0, 0);
+    }
+    25% {
+      transform: scale(1.1) translate(20px, -10px);
+    }
+    50% {
+      transform: scale(0.9) translate(-10px, 20px);
+    }
+    75% {
+      transform: scale(1.05) translate(-20px, -10px);
+    }
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+  }
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
