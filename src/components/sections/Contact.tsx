@@ -1,6 +1,5 @@
 import React from "react";
 import { Send, Instagram, Github, Linkedin } from "lucide-react";
-import { SiWhatsapp } from 'react-icons/si';
 import { AnimatedSection } from "../ui/AnimatedSection";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useTheme } from "../../contexts/ThemeContext";
@@ -12,24 +11,20 @@ export const Contact: React.FC = () => {
   const colors = getThemeColors(theme);
 
   const contactLinks = [
-    {
-      icon: <SiWhatsapp className="w-7 h-7" />,
-      href: "https://wa.me/79991234567",
-      label: "Whatsapp",
-    },
+
     {
       icon: <Send className="w-7 h-7" />,
-      href: "https://t.me/yourusername",
+      href: "https://t.me/DanisKhasanov",
       label: "Telegram",
     },
     {
       icon: <Instagram className="w-7 h-7" />,
-      href: "https://instagram.com/yourusername",
+      href: "https://www.instagram.com/khasanovdanis/profilecard/?igsh=MTZiYnN4azBoY2JtbQ==",
       label: "Instagram",
     },
     {
       icon: <Github className="w-7 h-7" />,
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/DanisKhasanov',
       label: 'GitHub',
     },
     {

@@ -12,9 +12,9 @@ export const Resume: React.FC = () => {
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);
 
   const handleDownload = () => {
-    // Здесь можно добавить логику для скачивания PDF резюме
+    // Скачивание PDF резюме из public
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Путь к файлу резюме
+    link.href = '/resume.pdf'; // Путь к файлу резюме в public
     link.download = 'resume.pdf';
     link.click();
   };
@@ -86,35 +86,12 @@ export const Resume: React.FC = () => {
               <div className={`relative rounded-2xl overflow-hidden shadow-2xl border ${
                 theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
               }`}>
-                {/* Здесь можно встроить PDF или показать резюме в iframe */}
-                <div className={`aspect-[3/4] w-full ${
-                  theme === 'dark' ? 'bg-gray-900' : 'bg-white'
-                } flex items-center justify-center`}>
-                  <div className="text-center p-8">
-                    <div className={`text-6xl mb-4 ${
-                      theme === 'dark' ? 'text-gray-600' : 'text-gray-300'
-                    }`}>
-                      📄
-                    </div>
-                    <h3 className={`text-xl font-semibold mb-2 ${
-                      theme === 'dark' ? 'text-white' : 'text-gray-900'
-                    }`}>
-                      {t.resume.previewTitle}
-                    </h3>
-                    <p className={`${
-                      theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                    }`}>
-                      {t.resume.previewText}
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Альтернативно, можно встроить PDF */}
-                {/* <iframe 
+                {/* Встраиваем PDF-файл для предпросмотра */}
+                <iframe 
                   src="/resume.pdf" 
-                  className="w-full h-[800px]"
+                  className="w-full aspect-[3/4] min-h-[60vh] bg-white dark:bg-gray-900"
                   title="Resume Preview"
-                /> */}
+                />
               </div>
             </AnimatedSection>
           )}

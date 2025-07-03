@@ -29,7 +29,7 @@ export const AnimatedSection: React.FC<AnimatedSectionProps> = ({
 
   return (
     <div
-      ref={ref}
+      ref={ref as React.RefObject<HTMLDivElement>}
       className={`transition-all duration-700 ease-out ${animations[animation]} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >

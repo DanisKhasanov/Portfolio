@@ -62,11 +62,11 @@ export const Hero: React.FC = () => {
             <AnimatedSection animation="fadeInRight" delay={100}>
               <div className="inline-block px-4 py-1 mb-4 border rounded-full text-sm font-semibold tracking-wide
                 bg-gradient-to-r from-blue-500/10 to-purple-500/10 
-                border-blue-500/30
+                border-green-400
                 text-blue-400
+                animate-pulse
               ">
                 <span className="relative">
-                  <span className="absolute -top-2 -right-4 w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                   {t.hero.status}
                 </span>
               </div>

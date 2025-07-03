@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 export interface Project {
   id: string;
   title: string;
   description: string;
   technologies: string[];
+  images?: string[];
   githubUrl?: string;
   liveUrl?: string;
-  image?: string;
 }
 
 export interface Skill {
@@ -16,9 +16,9 @@ export interface Skill {
   category: string;
 }
 
-export type Language = 'ru' | 'en';
+export type Language = "ru" | "en";
 
-export type Theme = 'light' | 'dark';
+export type Theme = "dark" | "light";
 
 export interface Translation {
   nav: {
@@ -70,10 +70,5 @@ export interface Translation {
     email: string;
     phone: string;
     location: string;
-  };
-  common: {
-    yearsExperience: string;
-    completedProjects: string;
-    happyClients: string;
   };
 }
