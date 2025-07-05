@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { getThemeColors } from '../../utils/theme';
 
@@ -9,12 +8,12 @@ interface BadgeProps {
   className?: string;
 }
 
-export const Badge: React.FC<BadgeProps> = ({
+export const Badge = ({
   children,
   variant = 'primary',
   size = 'sm',
   className = '',
-}) => {
+}: BadgeProps) => {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
 

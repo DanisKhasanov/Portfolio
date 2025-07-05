@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ChevronDown } from "lucide-react";
 import { AnimatedSection } from "../ui/AnimatedSection";
 import { useLanguage } from "../../contexts/LanguageContext";
@@ -6,7 +6,7 @@ import { useTheme } from "../../contexts/ThemeContext";
 import { getThemeColors } from "../../utils/theme";
 import BlurredCircle from "../ui/BlurredCircle";
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   const { t } = useLanguage();
   const { theme } = useTheme();
   const colors = getThemeColors(theme);

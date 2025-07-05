@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AnimatedSection } from '../ui/AnimatedSection';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -13,7 +13,7 @@ import photo4 from '../../assets/about/4.jpg';
 
 const photos = [photo1, photo2, photo3, photo4];
 
-export const About: React.FC = () => {
+export const About = () => {
   const { t } = useLanguage();
   const { theme } = useTheme();
   const colors = getThemeColors(theme);

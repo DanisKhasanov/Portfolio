@@ -1,14 +1,15 @@
-import React from "react";
+
 import { Send, Instagram, Github, Linkedin } from "lucide-react";
 import { AnimatedSection } from "../ui/AnimatedSection";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useTheme } from "../../contexts/ThemeContext";
 import { getThemeColors } from "../../utils/theme";
 
-export const Contact: React.FC = () => {
+export const Contact = () => {
   const { t } = useLanguage();
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
+  
 
   const contactLinks = [
 
@@ -29,7 +30,7 @@ export const Contact: React.FC = () => {
     },
     {
       icon: <Linkedin className="w-7 h-7" />,
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/danis-khasanov-a8b79930b/',
       label: 'LinkedIn',
     },
   ];

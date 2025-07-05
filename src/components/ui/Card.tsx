@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 
 interface CardProps {
@@ -7,11 +6,11 @@ interface CardProps {
   hover?: boolean;
 }
 
-export const Card: React.FC<CardProps> = ({ 
+export const Card = ({ 
   children, 
   className = '', 
   hover = true 
-}) => {
+}: CardProps) => {
   const { theme } = useTheme();
   
   const hoverClasses = hover 

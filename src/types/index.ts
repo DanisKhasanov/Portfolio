@@ -18,7 +18,7 @@ export interface Skill {
 
 export type Language = "ru" | "en";
 
-export type Theme = "dark" | "light";
+export type Theme = "light" | "dark";
 
 export interface Translation {
   nav: {

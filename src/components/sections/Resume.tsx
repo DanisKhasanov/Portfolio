@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AnimatedSection } from '../ui/AnimatedSection';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useTheme } from '../../contexts/ThemeContext';
 import { getThemeColors } from '../../utils/theme';
 import { Download, Eye, EyeOff } from 'lucide-react';
+import { Document, Page, pdfjs } from 'react-pdf';
 
-export const Resume: React.FC = () => {
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.mjs';
+
+export const Resume = () => {
   const { t } = useLanguage();
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
@@ -35,7 +38,7 @@ export const Resume: React.FC = () => {
             }`}>
               {t.resume.title}
             </h2>
-            <div className={`w-[7rem] h-1 bg-gradient-to-r ${colors.primary} mx-auto`}></div>
+            <div className={`w-[9rem] h-1 bg-gradient-to-r ${colors.primary} mx-auto`}></div>
           </div>
         </AnimatedSection>
 
@@ -83,15 +86,21 @@ export const Resume: React.FC = () => {
 
           {isPreviewVisible && (
             <AnimatedSection animation="fadeInUp" delay={400}>
-              <div className={`relative rounded-2xl overflow-hidden shadow-2xl border ${
-                theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
-              }`}>
-                {/* Встраиваем PDF-файл для предпросмотра */}
-                <iframe 
-                  src="/resume.pdf" 
-                  className="w-full aspect-[3/4] min-h-[60vh] bg-white dark:bg-gray-900"
-                  title="Resume Preview"
-                />
+              <div
+                className={`flex justify-center items-center relative rounded-2xl overflow-hidden shadow-2xl border ${
+                  theme === 'dark' ? 'border-gray-700' : 'border-gray-200'
+                }`}
+                style={{ minHeight: '80vh' }}
+              >
+                <Document file="/resume.pdf" loading="Загрузка...">
+                  <Page
+                    pageNumber={1}
+                    width={Math.min(window.innerWidth * 0.95, 900)}
+                    renderTextLayer={false}
+                    renderAnnotationLayer={false}
+                    className="pdf-page"
+                  />
+                </Document>
               </div>
             </AnimatedSection>
           )}

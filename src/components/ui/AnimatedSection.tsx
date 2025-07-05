@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 
 interface AnimatedSectionProps {
@@ -8,12 +8,12 @@ interface AnimatedSectionProps {
   className?: string;
 }
 
-export const AnimatedSection: React.FC<AnimatedSectionProps> = ({
+export const AnimatedSection = ({
   children,
   animation = 'fadeInUp',
   delay = 0,
   className = '',
-}) => {
+}: AnimatedSectionProps) => {
   const { ref, hasIntersected } = useIntersectionObserver({
     threshold: 0.1,
     rootMargin: '-50px',

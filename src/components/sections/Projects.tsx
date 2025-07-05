@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ExternalLink, Github, ChevronLeft, ChevronRight, ZoomIn, X } from 'lucide-react';
 import { Card } from '../ui/Card';
 import { Badge } from '../ui/Badge';
@@ -9,7 +9,7 @@ import { useTheme } from '../../contexts/ThemeContext';
 import { getThemeColors } from '../../utils/theme';
 import { projects } from '../../data/projects';
 
-export const Projects: React.FC = () => {
+export const Projects = () => {
   const { t } = useLanguage();
   const { theme } = useTheme();
   const colors = getThemeColors(theme);

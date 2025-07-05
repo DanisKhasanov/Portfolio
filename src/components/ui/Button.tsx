@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { getThemeColors } from '../../utils/theme';
 
@@ -12,7 +11,7 @@ interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   children,
   variant = 'primary',
   size = 'md',
@@ -20,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   disabled = false,
   type = 'button',
-}) => {
+}: ButtonProps) => {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
 
