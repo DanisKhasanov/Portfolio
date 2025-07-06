@@ -5,6 +5,7 @@ import { useTheme } from '../../contexts/ThemeContext';
 import { getThemeColors } from '../../utils/theme';
 import { Download, Eye, EyeOff } from 'lucide-react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import resume from '../../../public/resume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.mjs';
 
@@ -17,7 +18,7 @@ export const Resume = () => {
   const handleDownload = () => {
     // Скачивание PDF резюме из public
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Путь к файлу резюме в public
+    link.href = resume; // Путь к файлу резюме в public
     link.download = 'resume.pdf';
     link.click();
   };
