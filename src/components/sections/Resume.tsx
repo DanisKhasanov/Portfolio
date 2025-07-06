@@ -5,7 +5,6 @@ import { useTheme } from '../../contexts/ThemeContext';
 import { getThemeColors } from '../../utils/theme';
 import { Download, Eye, EyeOff } from 'lucide-react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import resume from '../../../public/resume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = import.meta.env.BASE_URL + 'pdf.worker.mjs';
 
@@ -15,10 +14,11 @@ export const Resume = () => {
   const colors = getThemeColors(theme);
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);
 
+  const resumeUrl = import.meta.env.BASE_URL + 'resume.pdf';
+
   const handleDownload = () => {
-    // Скачивание PDF резюме из public
     const link = document.createElement('a');
-    link.href = resume; // Путь к файлу резюме в public
+    link.href = resumeUrl;
     link.download = 'resume.pdf';
     link.click();
   };
@@ -93,7 +93,7 @@ export const Resume = () => {
                 }`}
                 style={{ minHeight: '80vh' }}
               >
-                <Document file="/resume.pdf" loading="Загрузка...">
+                <Document file={resumeUrl} loading="Загрузка...">
                   <Page
                     pageNumber={1}
                     width={Math.min(window.innerWidth * 0.95, 900)}
