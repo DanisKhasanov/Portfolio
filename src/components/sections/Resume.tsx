@@ -7,7 +7,7 @@ import { Download, Eye, EyeOff } from 'lucide-react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import resume from '../../../public/resume.pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.mjs';
+pdfjs.GlobalWorkerOptions.workerSrc = import.meta.env.BASE_URL + 'pdf.worker.mjs';
 
 export const Resume = () => {
   const { t } = useLanguage();
