@@ -45,7 +45,7 @@ export const Projects = () => {
                 {project.images && project.images.length > 0 ? (
                   <div className={`h-64 rounded-xl mb-6 relative flex items-center justify-center shadow-lg overflow-hidden group transition-all ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
                     <img
-                      src={project.images && project.images[0]}
+                      src={project.images && project.images[0] && project.images[0].startsWith('/') ? `${import.meta.env.BASE_URL}${project.images[0].slice(1)}` : project.images[0]}
                       alt={project.title}
                       className="object-contain max-h-full max-w-full mx-auto cursor-pointer transition-transform duration-300 group-hover:scale-105"
                       style={{ maxHeight: '15rem' }}
@@ -60,7 +60,7 @@ export const Projects = () => {
                 ) : project.images && project.images.length > 0 ? (
                   <div className="h-48 rounded-lg mb-6 relative overflow-hidden flex items-center justify-center bg-gray-100 dark:bg-gray-800">
                     <img
-                      src={project.images[0]}
+                      src={project.images[0] && project.images[0].startsWith('/') ? `${import.meta.env.BASE_URL}${project.images[0].slice(1)}` : project.images[0]}
                       alt={project.title}
                       className="object-contain h-full w-full"
                     />
@@ -153,7 +153,7 @@ export const Projects = () => {
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
-            <img src={modalImage} alt="project" className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl " />
+            <img src={modalImage && modalImage.startsWith('/') ? `${import.meta.env.BASE_URL}${modalImage.slice(1)}` : modalImage} alt="project" className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl " />
             <button
               className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 shadow-lg transition-all"
               onClick={e => {
