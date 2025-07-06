@@ -39,18 +39,40 @@ export const projects: Project[] = [
       "Telegram API",
     ],
     images: [
-      `${import.meta.env.BASE_URL}Koorator/1.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-13-45-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-15-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-26-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-30-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-33-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-37-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-42-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-45-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-49-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-52-Photoroom.jpg`,
-      `${import.meta.env.BASE_URL}Koorator/photo_2025-07-03_21-14-57-Photoroom.jpg`,
+      `${import.meta.env.BASE_URL}Koorator/1.png`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-13-45-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-15-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-26-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-30-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-33-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-37-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-42-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-45-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-49-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-52-Photoroom.jpg`,
+      `${
+        import.meta.env.BASE_URL
+      }Koorator/photo_2025-07-03_21-14-57-Photoroom.jpg`,
     ],
   },
   {
@@ -69,11 +91,16 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/DanisKhasanov/Agrotat",
     images: [
+      `${import.meta.env.BASE_URL}Agrotat/1.png`,
       `${import.meta.env.BASE_URL}Agrotat/Модальное окно  "Мониторинг".png`,
       `${import.meta.env.BASE_URL}Agrotat/Страница Уведомления.png`,
-      `${import.meta.env.BASE_URL}Agrotat/Страница Анализ ( анализ пробега).png`,
+      `${
+        import.meta.env.BASE_URL
+      }Agrotat/Страница Анализ ( анализ пробега).png`,
       `${import.meta.env.BASE_URL}Agrotat/Страница отчеты (Заправки).png`,
-      `${import.meta.env.BASE_URL}Agrotat/Создание поездки (автокомплит городов).png`,
+      `${
+        import.meta.env.BASE_URL
+      }Agrotat/Создание поездки (автокомплит городов).png`,
       `${import.meta.env.BASE_URL}Agrotat/Страница Машины.png`,
     ],
   },
@@ -93,18 +120,27 @@ export const projects: Project[] = [
       "Notistack",
     ],
     images: [
+      `${import.meta.env.BASE_URL}Barber/1.png`,
       `${import.meta.env.BASE_URL}Barber/photo_2025-06-12_01-03-48.jpg`,
       `${import.meta.env.BASE_URL}Barber/photo_2025-06-12_01-43-26.jpg`,
-      `${import.meta.env.BASE_URL}Barber/Снимок экрана 2025-06-12 в 01.52.59.png`,
-      `${import.meta.env.BASE_URL}Barber/Снимок экрана 2025-06-12 в 02.01.15.png`,
-      `${import.meta.env.BASE_URL}Barber/Снимок экрана 2025-06-12 в 02.03.43.png`,
-      `${import.meta.env.BASE_URL}Barber/Снимок экрана 2025-06-12 в 02.04.54.png`,
+      `${
+        import.meta.env.BASE_URL
+      }Barber/Снимок экрана 2025-06-12 в 01.52.59.png`,
+      `${
+        import.meta.env.BASE_URL
+      }Barber/Снимок экрана 2025-06-12 в 02.01.15.png`,
+      `${
+        import.meta.env.BASE_URL
+      }Barber/Снимок экрана 2025-06-12 в 02.03.43.png`,
+      `${
+        import.meta.env.BASE_URL
+      }Barber/Снимок экрана 2025-06-12 в 02.04.54.png`,
     ],
     githubUrl: "https://github.com/DanisKhasanov/BarberLink",
   },
   {
     id: "7",
-    title: "Online_shop",
+    title: "Online shop",
     description:
       "Современный демо-интернет-магазин с адаптивным дизайном и полным циклом покупки.",
     technologies: [
@@ -117,11 +153,63 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/DanisKhasanov/touch_it",
     liveUrl: "https://daniskhasanov.github.io/touch_it/",
-    images: [`${import.meta.env.BASE_URL}OnlineShop/Снимок экрана от 2025-07-03 21-31-22.png`],
+    images: [
+      `${
+        import.meta.env.BASE_URL
+      }OnlineShop/Снимок экрана от 2025-07-03 21-31-22.png`,
+    ],
+  },
+  {
+    id: "6",
+    title: "Cdek OrderPRO",
+    description:
+      "Интеграция с сервисом доставки СДЭК, позволяющая автоматически рассчитывать стоимость доставки, создавать и скачивать накладные.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "React-router-dom",
+      "Axios",
+      "Vite",
+      "React-Dadata",
+      "Notistack",
+    ],
+    images: [
+      `${import.meta.env.BASE_URL}Cdek/0.png`,
+      `${import.meta.env.BASE_URL}Cdek/1.png`,
+      `${import.meta.env.BASE_URL}Cdek/2.png`,
+      `${import.meta.env.BASE_URL}Cdek/3.png`,
+      `${import.meta.env.BASE_URL}Cdek/4.png`,
+      `${import.meta.env.BASE_URL}Cdek/5.png`,
+      `${import.meta.env.BASE_URL}Cdek/6.png`,
+    ],
+    githubUrl: "https://github.com/DanisKhasanov/Cdek_Order_PRO",
+  },
+  {
+    id: "5",
+    title: "Price List",
+    description:
+      "Веб-приложение для управления и отображения прайс-листов. Основная цель проекта — упростить процесс создания, обновления и публикации прайс-листов в формате PDF для различных товаров и услуг",
+    technologies: [
+      "React",
+      "TypeScript",
+      "React-router-dom",
+      "Material UI",
+      "Material React Table",
+      "Axios",
+      "Vite",
+      "PDF Make",
+    ],
+    images: [
+      `${import.meta.env.BASE_URL}PriceList/0.png`,
+      `${import.meta.env.BASE_URL}PriceList/1.png`,
+      `${import.meta.env.BASE_URL}PriceList/2.png`,
+      `${import.meta.env.BASE_URL}PriceList/3.png`,
+    ],
+    githubUrl: "https://github.com/DanisKhasanov/PriceList",
   },
   {
     id: "4",
-    title: "Customer_orders",
+    title: "Customer Orders",
     description:
       "Веб-приложение, предназначенное для управления заказами клиентов, с функцией автозаполнения для повышения удобства пользователей.",
     technologies: [
@@ -135,40 +223,5 @@ export const projects: Project[] = [
     ],
     images: [],
     githubUrl: "https://github.com/DanisKhasanov/Customer_orders",
-  },
-  {
-    id: "5",
-    title: "PriceList",
-    description:
-      "Веб-приложение для управления и отображения прайс-листов. Основная цель проекта — упростить процесс создания, обновления и публикации прайс-листов в формате PDF для различных товаров и услуг",
-    technologies: [
-      "React",
-      "TypeScript",
-      "React-router-dom",
-      "Material UI",
-      "Material React Table",
-      "Axios",
-      "Vite",
-      "PDF Make",
-    ],
-    images: [],
-    githubUrl: "https://github.com/DanisKhasanov/PriceList",
-  },
-  {
-    id: "6",
-    title: "Cdek_Order_PRO",
-    description:
-      "Интеграция с сервисом доставки СДЭК, позволяющая автоматически рассчитывать стоимость доставки, создавать и скачивать накладные.",
-    technologies: [
-      "React",
-      "TypeScript",
-      "React-router-dom",
-      "Axios",
-      "Vite",
-      "React-Dadata",
-      "Notistack",
-    ],
-    images: [],
-    githubUrl: "https://github.com/DanisKhasanov/Cdek_Order_PRO",
   },
 ];

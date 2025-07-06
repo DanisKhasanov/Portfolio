@@ -102,7 +102,12 @@ export const Hero = () => {
                   theme === "dark" ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                {t.hero.description}
+                {t.hero.description.split('\n').map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br />
+                  </span>
+                ))}
               </p>
             </AnimatedSection>
           </div>

@@ -126,7 +126,12 @@ export const About = () => {
               <p className={`text-lg leading-relaxed ${
                 theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
               }`}>
-                {t.about.description}
+                {t.about.description.split('\n').map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    {index < t.about.description.split('\n').length - 1 && <br />}
+                  </span>
+                ))}
               </p>
             </div>
           </AnimatedSection>

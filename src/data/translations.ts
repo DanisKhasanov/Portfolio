@@ -15,13 +15,13 @@ export const translations: Record<string, Translation> = {
       name: "React Developer",
       status: "В поиске работы",
       description:
-        "Создаю современные веб-приложения с опытом более 2 лет. Специализируюсь на React, TypeScript, и современных технологиях.",
+        "Создаю современные веб-приложения с опытом более 2 лет.\nСпециализируюсь на React/TypeScript и современных библиотеках.",
       contactMe: "Связаться",
     },
     about: {
       title: "О себе",
       description:
-        "React Developer с опытом более 2 лет. Использую как готовые компоненты (MUI), так и создаю собственные решения с Tailwind CSS. Имею опыт работы с Redux Toolkit, RTK Query, Axios, разработки мобильных приложений на Telegram Mini Apps, работы с WebSocket, Git, TypeScript, сборщиком Vite, React Router и React Native.",
+        "Готов к сложным задачам, быстро вливаюсь в проекты, изучаю новые фреймворки и библиотеки.\nУмею эффективно общаться с коллегами и участвовать в обсуждении технических решений.\nЗакончил School21 по программированию (Сбербанк)",
       experience: "Опыт работы",
       projects: "Проектов",
       clients: "Клиентов",
@@ -72,13 +72,13 @@ export const translations: Record<string, Translation> = {
       name: "React Developer",
       status: "Open to Work",
       description:
-        "Building modern web applications with 2+ years of experience. Specializing in React, TypeScript, and cutting-edge technologies.",
+        "Building modern web applications with 2+ years of experience.\nSpecializing in React, TypeScript, and cutting-edge technologies.",
       contactMe: "Contact Me",
     },
     about: {
       title: "About Me",
       description:
-        "React Developer with 2+ years of experience. I work with both ready-made components (MUI) and create custom solutions with Tailwind CSS. Experienced with Redux Toolkit, RTK Query, Axios, Telegram Mini Apps development, WebSocket, Git, TypeScript, Vite bundler, React Router, and React Native.",
+        "Ready for complex tasks, quickly integrate into projects, study new frameworks and libraries.\nI can effectively communicate with colleagues and participate in technical discussions.\nGraduated from School21 programming (Sberbank)",
       experience: "Years Experience",
       projects: "Projects",
       clients: "Happy Clients",
@@ -108,7 +108,7 @@ export const translations: Record<string, Translation> = {
     contact: {
       title: "Get In Touch",
       description:
-        "Ready to discuss your project or collaboration opportunities",
+        "You can always contact me, I will respond to your message as soon as possible",
       email: "Email",
       phone: "Phone",
       location: "Location",

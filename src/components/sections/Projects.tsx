@@ -43,12 +43,11 @@ export const Projects = () => {
               <Card className="h-full flex flex-col">
                 {/* Project Image/Slider */}
                 {project.images && project.images.length > 0 ? (
-                  <div className={`h-64 rounded-xl mb-6 relative flex items-center justify-center shadow-lg overflow-hidden group transition-all ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
+                  <div className={`h-[270px] rounded-xl mb-6 relative flex items-center justify-center shadow-lg overflow-hidden group transition-all ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
                     <img
                       src={project.images && project.images[0]}
                       alt={project.title}
-                      className="object-contain max-h-full max-w-full mx-auto cursor-pointer transition-transform duration-300 group-hover:scale-105"
-                      style={{ maxHeight: '15rem' }}
+                      className="w-full h-full object-cover cursor-pointer transition-transform duration-300 group-hover:scale-105"
                       onClick={() => project.images && setModalImage(project.images[1])}
                     />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
@@ -57,16 +56,8 @@ export const Projects = () => {
                       <ZoomIn className="w-10 h-10 text-white drop-shadow-lg bg-black/50 rounded-full p-2" />
                     </div>
                   </div>
-                ) : project.images && project.images.length > 0 ? (
-                  <div className="h-48 rounded-lg mb-6 relative overflow-hidden flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-                    <img
-                      src={project.images[0]}
-                      alt={project.title}
-                      className="object-contain h-full w-full"
-                    />
-                  </div>
                 ) : (
-                  <div className={`h-60 bg-gradient-to-br ${colors.primary} rounded-lg mb-6 relative overflow-hidden flex items-center justify-center`}>
+                  <div className={`h-[270px] bg-gradient-to-br ${colors.primary} rounded-lg mb-6 relative overflow-hidden flex items-center justify-center`}>
                     <span className="text-white text-lg font-semibold">
                       {project.title}
                     </span>
