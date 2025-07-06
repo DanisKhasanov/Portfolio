@@ -1,10 +1,10 @@
-
 import { ChevronDown } from "lucide-react";
 import { AnimatedSection } from "../ui/AnimatedSection";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { useTheme } from "../../contexts/ThemeContext";
 import { getThemeColors } from "../../utils/theme";
 import BlurredCircle from "../ui/BlurredCircle";
+import photo from "../../assets/hero/photo.jpg";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -52,7 +52,7 @@ export const Hero = () => {
               className={`relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-1 bg-gradient-to-br ${colors.primary}`}
             >
               <div className="w-full h-full bg-gray-700 rounded-full flex items-center justify-center ">
-                <img src="src/assets/hero/photo.jpg" alt="Hero Image" className="w-full h-full object-cover rounded-full" />
+                <img src={photo} alt="Hero Image" className="w-full h-full object-cover rounded-full" />
               </div>
             </div>
           </AnimatedSection>
