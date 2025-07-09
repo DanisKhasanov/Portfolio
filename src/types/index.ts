@@ -2,6 +2,7 @@ import React from "react";
 
 export interface Project {
   id: string;
+  translationKey: string;
   title: string;
   description: string;
   technologies: string[];
@@ -54,6 +55,38 @@ export interface Translation {
     title: string;
     viewCode: string;
     viewLive: string;
+    happyFox: {
+      title: string;
+      description: string;
+    };
+    koorator: {
+      title: string;
+      description: string;
+    };
+    agrotat: {
+      title: string;
+      description: string;
+    };
+    barberLink: {
+      title: string;
+      description: string;
+    };
+    onlineShop: {
+      title: string;
+      description: string;
+    };
+    cdekOrderPro: {
+      title: string;
+      description: string;
+    };
+    priceList: {
+      title: string;
+      description: string;
+    };
+    customerOrders: {
+      title: string;
+      description: string;
+    };
   };
   resume: {
     title: string;

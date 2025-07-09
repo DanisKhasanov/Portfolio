@@ -68,13 +68,13 @@ export const Projects = () => {
                   <h3 className={`text-xl font-semibold mb-3 ${
                     theme === 'dark' ? 'text-white' : 'text-gray-900'
                   }`}>
-                    {project.title}
+                    {(t.projects as any)[project.translationKey]?.title || project.title}
                   </h3>
                   
                   <p className={`mb-4 flex-1 ${
                     theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
                   }`}>
-                    {project.description}
+                    {(t.projects as any)[project.translationKey]?.description || project.description}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-6">
