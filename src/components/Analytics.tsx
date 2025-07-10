@@ -1,21 +1,22 @@
 import { useEffect } from 'react';
-import { useAnalytics } from '../hooks/useAnalytics';
 
-const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 export const Analytics = () => {
-  const { trackEvent, trackPageView } = useAnalytics(GA_MEASUREMENT_ID);
-
   useEffect(() => {
-    // Отслеживаем начальную загрузку страницы
-    trackPageView('Portfolio Home', window.location.href);
+    // Проверяем, что gtag доступен (загружен из HTML)
+    if (typeof window.gtag === 'undefined') return;
 
     // Отслеживаем информацию о пользователе
     const userAgent = navigator.userAgent;
     const language = navigator.language;
     const screenResolution = `${screen.width}x${screen.height}`;
     
-    trackEvent('page_load', {
+    window.gtag('event', 'page_load', {
       user_agent: userAgent,
       language: language,
       screen_resolution: screenResolution,
@@ -27,7 +28,7 @@ export const Analytics = () => {
 
     const handleBeforeUnload = () => {
       const timeSpent = Math.round((Date.now() - startTime) / 1000);
-      trackEvent('time_on_site', {
+      window.gtag('event', 'time_on_site', {
         duration_seconds: timeSpent,
       });
     };
@@ -41,7 +42,7 @@ export const Analytics = () => {
         const href = link.getAttribute('href');
         const text = link.textContent?.trim();
         
-        trackEvent('link_click', {
+        window.gtag('event', 'link_click', {
           link_url: href,
           link_text: text,
           section: getSection(target),
@@ -54,7 +55,7 @@ export const Analytics = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const sectionId = entry.target.id || entry.target.className;
-          trackEvent('section_view', {
+          window.gtag('event', 'section_view', {
             section_name: sectionId,
             visibility_percentage: Math.round(entry.intersectionRatio * 100),
           });
@@ -79,7 +80,7 @@ export const Analytics = () => {
       document.removeEventListener('click', handleLinkClick);
       observer.disconnect();
     };
-  }, [trackEvent, trackPageView]);
+  }, []);
 
   return null; // Компонент не рендерит UI
 };

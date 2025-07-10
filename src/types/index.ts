@@ -107,7 +107,5 @@ export interface Translation {
   cookieNotice: {
     title: string;
     message: string;
-    accept: string;
-    decline: string;
   };
 }
