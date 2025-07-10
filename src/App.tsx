@@ -8,6 +8,8 @@ import { Projects } from './components/sections/Projects';
 import { Resume } from './components/sections/Resume';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
+import { Analytics } from './components/Analytics';
+import { CookieNotice } from './components/ui/CookieNotice';
 import { useTheme } from './contexts/ThemeContext';
 
 function AppContent() {
@@ -17,6 +19,10 @@ function AppContent() {
     <div className={`min-h-screen transition-colors duration-300 ${
       theme === 'dark' ? 'bg-gray-900' : 'bg-white'
     }`}>
+      {/* Компонент аналитики для отслеживания посетителей */}
+      <Analytics />
+      {/* Уведомление о cookies для соблюдения GDPR */}
+      <CookieNotice />
       <Header />
       <main>
         <Hero />

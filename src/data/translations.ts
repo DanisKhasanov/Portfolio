@@ -97,6 +97,12 @@ export const translations: Record<string, Translation> = {
       phone: "Телефон",
       location: "Местоположение",
     },
+    cookieNotice: {
+      title: "Использование cookies",
+      message: "Мы используем Google Analytics для анализа посещаемости сайта и улучшения пользовательского опыта. Данные собираются анонимно.",
+      accept: "Принять",
+      decline: "Отклонить",
+    },
   },
   en: {
     nav: {
@@ -192,6 +198,12 @@ export const translations: Record<string, Translation> = {
       email: "Email",
       phone: "Phone",
       location: "Location",
+    },
+    cookieNotice: {
+      title: "Cookie Usage",
+      message: "We use Google Analytics to analyze site traffic and improve user experience. Data is collected anonymously.",
+      accept: "Accept",
+      decline: "Decline",
     },
   },
 };

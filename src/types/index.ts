@@ -104,4 +104,10 @@ export interface Translation {
     phone: string;
     location: string;
   };
+  cookieNotice: {
+    title: string;
+    message: string;
+    accept: string;
+    decline: string;
+  };
 }
