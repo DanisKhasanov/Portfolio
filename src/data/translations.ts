@@ -77,6 +77,11 @@ export const translations: Record<string, Translation> = {
         description:
           "Веб-приложение, предназначенное для управления заказами клиентов, с функцией автозаполнения для повышения удобства пользователей.",
       },
+      koorator_Admin: {
+        title: "Admin",
+        description:
+          "Admin — это десктопное приложение, для управление мобильного приложения Koorator. Обрабатывает все взаимодействия с пациентами с использованием WebSocket. Позволяет медицинскому персоналу отправлять сообщения напрямую в Telegram аккаунты пациентов, делиться медицинскими документами, результатами анализов и планами лечения. Включает просмотр истории сообщений и систему прикрепления файлов.",
+      },
     },
     resume: {
       title: "Резюме",
@@ -177,6 +182,11 @@ export const translations: Record<string, Translation> = {
         title: "Customer Orders",
         description:
           "Web application designed for managing customer orders, with autofill functionality to enhance user convenience.",
+      },
+      koorator_Admin: {
+        title: "Admin",
+        description:
+          "Admin is a desktop application for managing the Koorator mobile application. Handles all interactions with patients using WebSocket. Allows medical staff to send messages directly to patients' Telegram accounts, share medical records, test results, and treatment plans. Includes viewing message history and a file attachment system.",
       },
     },
     resume: {

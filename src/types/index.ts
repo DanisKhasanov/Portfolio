@@ -87,6 +87,10 @@ export interface Translation {
       title: string;
       description: string;
     };
+    koorator_Admin:{
+      title: string;
+      description: string;
+    };
   };
   resume: {
     title: string;

@@ -78,6 +78,31 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "9",
+    translationKey: "koorator_Admin",
+    title: "Admin",
+    description:
+      "Admin — это десктопное приложение, для управление мобильного приложения Koorator. Обрабатывает все взаимодействия с пациентами с использованием WebSocket. Позволяет медицинскому персоналу отправлять сообщения напрямую в Telegram аккаунты пациентов, делиться медицинскими документами, результатами анализов и планами лечения. Включает просмотр истории сообщений и систему прикрепления файлов.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "WebSocket",
+      "Tailwind CSS",
+      "Axios",
+      "Vite",
+    ],
+    images: [
+      `${import.meta.env.BASE_URL}Admin/1.png`,
+      `${import.meta.env.BASE_URL}Admin/2.png`,
+      `${import.meta.env.BASE_URL}Admin/3.png`,
+      `${
+        import.meta.env.BASE_URL
+      }Admin/4.png`,
+      `${import.meta.env.BASE_URL}Admin/5.png`,
+    
+    ],
+  },
+  {
     id: "8",
     translationKey: "agrotat",
     title: "Agrotat",
