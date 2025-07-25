@@ -15,7 +15,7 @@ export const translations: Record<string, Translation> = {
       name: "React Developer",
       status: "В поиске работы",
       description:
-        "Создаю современные веб-приложения с опытом более 2 лет.\nСпециализируюсь на React/TypeScript и современных библиотеках.",
+        "Создаю современные веб-приложения с опытом более 3 лет.\nСпециализируюсь на React/TypeScript и современных библиотеках.",
       contactMe: "Связаться",
     },
     about: {
@@ -121,7 +121,7 @@ export const translations: Record<string, Translation> = {
       name: "React Developer",
       status: "Open to Work",
       description:
-        "Building modern web applications with 2+ years of experience.\nSpecializing in React, TypeScript, and cutting-edge technologies.",
+        "Building modern web applications with 3+ years of experience.\nSpecializing in React, TypeScript, and cutting-edge technologies.",
       contactMe: "Contact Me",
     },
     about: {
